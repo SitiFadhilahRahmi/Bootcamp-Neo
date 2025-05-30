@@ -1,0 +1,20 @@
+.footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.copyright a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
