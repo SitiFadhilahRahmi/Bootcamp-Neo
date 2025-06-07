@@ -1,0 +1,116 @@
+/* Main container with vertical padding and centered max width */
+.container {
+ width: 100vw;
+  padding-top: 4rem; 
+  padding-bottom: 5rem; 
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.artikel {
+  width: 1200px; 
+  margin: 100px auto 40px; 
+  padding: 24px;
+  border-radius: 16px; 
+  background-color: #1f2937;
+  color: white;
+  text-align: center; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.beranda-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.artikel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 2.5rem;
+}
+
+.artikel-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s cubic-bezier(0.4,0,0.2,1);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.artikel-card:hover,
+.artikel-card:focus-within {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.artikel-link {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  outline-offset: 4px;
+}
+
+.artikel-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.artikel-link:hover .artikel-image,
+.artikel-link:focus-visible .artikel-image {
+  border-color: #2563eb;
+}
+
+.artikel-judul {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding: 20px;
+  color: #111827;
+  margin: 1rem 1.25rem 1.5rem;
+  flex-grow: 1;
+  line-height: 1.2;
+}
+
+.artikel-isi{
+    text-align: justify;
+}
+
+.artikel-link:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 4px;
+}
+
+.kontak {
+  width: 800px; 
+  margin: 20px auto 40px; 
+  padding: 24px;
+  border-radius: 16px; 
+  background-color: #1f2937;
+  color: white;
+  text-align: center; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list-kontak{
+    text-align: justify;
+    margin-left: 100px;
+    font-size: 20px;
+
+}
