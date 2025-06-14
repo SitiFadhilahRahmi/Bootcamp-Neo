@@ -1,0 +1,159 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Mengisi sisa tinggi viewport setelah navbar (asumsi navbar tinggi 60px) */
+  min-height: calc(100vh - 60px);
+  padding: 30px 20px;
+  background-color: #f0f2f5; /* Latar belakang abu-abu muda yang lembut */
+  font-family: 'Inter', sans-serif;
+  color: #333; /* Warna teks utama */
+  box-sizing: border-box; /* Memastikan padding termasuk dalam dimensi */
+}
+
+.dashboard-container h1 {
+  font-size: 3em;
+  color: #282c34; /* Warna judul utama */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.dashboard-container p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #555;
+  text-align: center;
+  max-width: 700px; /* Batasi lebar paragraf untuk keterbacaan */
+  line-height: 1.6;
+}
+
+.dashboard-content {
+  background-color: #ffffff; /* Latar belakang putih untuk konten dasbor */
+  padding: 30px;
+  border-radius: 12px; /* Sudut membulat */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Bayangan yang lebih lembut */
+  margin-top: 30px;
+  width: 100%;
+  max-width: 900px; /* Batasi lebar konten */
+  box-sizing: border-box;
+}
+
+.dashboard-content h3 {
+  font-size: 1.8em;
+  color: #282c34;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 2px solid #eee; /* Garis bawah untuk bagian */
+  padding-bottom: 15px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kolom responsif */
+  gap: 25px; /* Jarak antar kartu stat */
+  justify-content: center; /* Pusatkan kartu jika ada ruang lebih */
+}
+
+.stat-card {
+  background-color: #e9f7fe; /* Latar belakang biru muda untuk kartu stat */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Bayangan kartu yang lebih ringan */
+  text-align: center;
+  border: 1px solid #cceeff; /* Border lembut */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px); /* Efek angkat saat hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h4 {
+  font-size: 1.4em;
+  color: #3a8ee6; /* Warna judul stat */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.stat-card p {
+  font-size: 2.2em;
+  color: #282c34; /* Warna angka stat */
+  font-weight: bold;
+  margin: 0;
+  line-height: 1; /* Pastikan angka tidak memiliki spasi berlebih */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-container h1 {
+    font-size: 2.5em;
+  }
+
+  .dashboard-container p {
+    font-size: 1em;
+  }
+
+  .dashboard-content {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .dashboard-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Kolom lebih kecil */
+    gap: 20px;
+  }
+
+  .stat-card {
+    padding: 20px;
+  }
+
+  .stat-card h4 {
+    font-size: 1.2em;
+  }
+
+  .stat-card p {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 20px 15px;
+  }
+
+  .dashboard-container h1 {
+    font-size: 2em;
+  }
+
+  .dashboard-content {
+    padding: 15px;
+  }
+
+  .dashboard-content h3 {
+    font-size: 1.3em;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr; /* Satu kolom di layar sangat kecil */
+  }
+
+  .stat-card {
+    padding: 18px;
+  }
+
+  .stat-card h4 {
+    font-size: 1.1em;
+  }
+
+  .stat-card p {
+    font-size: 1.6em;
+  }
+}

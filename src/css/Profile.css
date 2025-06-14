@@ -1,0 +1,133 @@
+/* Profile.css */
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Mengisi sisa tinggi viewport setelah navbar (asumsi navbar tinggi 60px) */
+  min-height: calc(100vh - 60px);
+  padding: 30px 20px;
+  background-color: #f0f2f5; /* Latar belakang abu-abu muda */
+  font-family: 'Inter', sans-serif;
+  color: #333; /* Warna teks utama */
+  box-sizing: border-box;
+}
+
+.profile-container h1 {
+  font-size: 3em;
+  color: #282c34; /* Warna judul utama */
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.profile-info {
+  background-color: #ffffff; /* Latar belakang putih untuk info profil */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px; /* Batasi lebar info profil */
+  box-sizing: border-box;
+  text-align: left; /* Teks di dalam info profil sejajar kiri */
+}
+
+.profile-info p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #555;
+  display: flex; /* Menggunakan flexbox untuk mengatur label dan nilai */
+  gap: 10px; /* Jarak antara label dan nilai */
+}
+
+.profile-info p strong {
+  color: #282c34; /* Warna lebih gelap untuk label */
+  min-width: 80px; /* Lebar minimum untuk label agar sejajar */
+}
+
+.profile-actions {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap; /* Membungkus tombol jika layar kecil */
+  gap: 15px; /* Jarak antar tombol */
+  justify-content: center; /* Pusatkan tombol */
+  width: 100%;
+  max-width: 600px;
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Warna abu-abu untuk tombol sekunder */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Warna abu-abu lebih gelap saat hover */
+  transform: translateY(-2px);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .profile-info {
+    padding: 25px;
+    margin-top: 15px;
+  }
+
+  .profile-info p {
+    font-size: 1em;
+    flex-direction: column; /* Tumpuk label dan nilai di layar kecil */
+    gap: 5px;
+  }
+
+  .profile-info p strong {
+    min-width: unset; /* Hapus lebar minimum */
+  }
+
+  .profile-actions {
+    margin-top: 25px;
+    gap: 10px;
+  }
+
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 20px 15px;
+  }
+
+  .profile-container h1 {
+    font-size: 2em;
+  }
+
+  .profile-info {
+    padding: 20px;
+  }
+
+  .btn-secondary {
+    width: 100%; /* Tombol memenuhi lebar di layar sangat kecil */
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,215 @@
+/* Tasks.css */
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 60px); /* Mengisi sisa tinggi viewport setelah navbar */
+  padding: 30px 20px;
+  background-color: #f0f2f5;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.tasks-container h1 {
+  font-size: 3em;
+  color: #282c34;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.add-task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 600px; /* Batasi lebar form */
+  box-sizing: border-box;
+}
+
+.task-input {
+  flex-grow: 1; /* Input akan mengisi ruang yang tersedia */
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-input:focus {
+  border-color: #61dafb;
+  box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3);
+  outline: none;
+}
+
+.add-task-form button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(97, 218, 251, 0.3);
+}
+
+.add-task-form button:hover {
+  background-color: #4fa3d1;
+  transform: translateY(-2px);
+}
+
+.add-task-form button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(97, 218, 251, 0.3);
+}
+
+.tasks-list {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+
+.task-item:last-child {
+  border-bottom: none; /* Hapus border bawah pada item terakhir */
+}
+
+.task-item.completed span {
+  text-decoration: line-through; /* Coret teks jika tugas selesai */
+  color: #888;
+}
+
+.task-item span {
+  cursor: pointer; /* Menunjukkan bahwa span dapat diklik */
+  flex-grow: 1;
+  text-align: left;
+  padding-right: 10px; /* Jarak dari tombol hapus */
+  font-size: 1.1em;
+}
+
+.delete-btn {
+  background-color: #dc3545; /* Warna merah untuk tombol hapus */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+}
+
+.delete-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-item {
+  background: #f1f5f9;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-btn,
+.delete-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  background-color: #4ade80;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tasks-container h1 {
+    font-size: 2.5em;
+  }
+
+  .add-task-form {
+    flex-direction: column; /* Tumpuk input dan tombol di layar kecil */
+    gap: 15px;
+  }
+
+  .add-task-form button {
+    width: 100%; /* Tombol memenuhi lebar */
+    box-sizing: border-box;
+  }
+
+  .tasks-list {
+    padding: 15px;
+  }
+
+  .task-item {
+    padding: 12px;
+    flex-direction: column; /* Tumpuk span dan tombol di layar kecil */
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .task-item span {
+    font-size: 1em;
+    padding-right: 0;
+  }
+
+  .delete-btn {
+    width: 100%; /* Tombol hapus memenuhi lebar */
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .tasks-container {
+    padding: 20px 15px;
+  }
+
+  .tasks-container h1 {
+    font-size: 2em;
+  }
+}
