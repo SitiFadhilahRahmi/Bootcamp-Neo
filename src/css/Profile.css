@@ -1,36 +1,33 @@
-/* Profile.css */
-
 .profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Mengisi sisa tinggi viewport setelah navbar (asumsi navbar tinggi 60px) */
   min-height: calc(100vh - 60px);
   padding: 30px 20px;
-  background-color: #f0f2f5; /* Latar belakang abu-abu muda */
+  background-color: #f0f2f5;
   font-family: 'Inter', sans-serif;
-  color: #333; /* Warna teks utama */
+  color: #333;
   box-sizing: border-box;
 }
 
 .profile-container h1 {
   font-size: 3em;
-  color: #282c34; /* Warna judul utama */
+  color: #282c34;
   margin-bottom: 25px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   font-weight: 700;
 }
 
 .profile-info {
-  background-color: #ffffff; /* Latar belakang putih untuk info profil */
+  background-color: #ffffff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   margin-top: 20px;
   width: 100%;
-  max-width: 600px; /* Batasi lebar info profil */
+  max-width: 600px;
   box-sizing: border-box;
-  text-align: left; /* Teks di dalam info profil sejajar kiri */
+  text-align: left;
 }
 
 .profile-info p {
@@ -38,27 +35,27 @@
   margin-bottom: 15px;
   line-height: 1.6;
   color: #555;
-  display: flex; /* Menggunakan flexbox untuk mengatur label dan nilai */
-  gap: 10px; /* Jarak antara label dan nilai */
+  display: flex;
+  gap: 10px;
 }
 
 .profile-info p strong {
-  color: #282c34; /* Warna lebih gelap untuk label */
-  min-width: 80px; /* Lebar minimum untuk label agar sejajar */
+  color: #282c34;
+  min-width: 80px;
 }
 
 .profile-actions {
   margin-top: 30px;
   display: flex;
-  flex-wrap: wrap; /* Membungkus tombol jika layar kecil */
-  gap: 15px; /* Jarak antar tombol */
-  justify-content: center; /* Pusatkan tombol */
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
   width: 100%;
   max-width: 600px;
 }
 
 .btn-secondary {
-  background-color: #6c757d; /* Warna abu-abu untuk tombol sekunder */
+  background-color: #6c757d;
   color: white;
   border: none;
   padding: 12px 25px;
@@ -71,7 +68,7 @@
 }
 
 .btn-secondary:hover {
-  background-color: #5a6268; /* Warna abu-abu lebih gelap saat hover */
+  background-color: #5a6268;
   transform: translateY(-2px);
 }
 
@@ -80,7 +77,6 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .profile-container h1 {
     font-size: 2.5em;
@@ -94,12 +90,12 @@
 
   .profile-info p {
     font-size: 1em;
-    flex-direction: column; /* Tumpuk label dan nilai di layar kecil */
+    flex-direction: column;
     gap: 5px;
   }
 
   .profile-info p strong {
-    min-width: unset; /* Hapus lebar minimum */
+    min-width: unset;
   }
 
   .profile-actions {
@@ -127,7 +123,7 @@
   }
 
   .btn-secondary {
-    width: 100%; /* Tombol memenuhi lebar di layar sangat kecil */
+    width: 100%;
     box-sizing: border-box;
   }
 }

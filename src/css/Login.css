@@ -1,43 +1,40 @@
-/* Login.css */
-
 .login-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Mengisi sisa tinggi viewport setelah navbar (asumsi navbar tinggi 60px) */
   min-height: calc(100vh - 60px);
   padding: 20px;
-  background-color: #f0f2f5; /* Latar belakang abu-abu muda */
+  background-color: #f0f2f5;
   font-family: 'Inter', sans-serif;
-  box-sizing: border-box; /* Memastikan padding termasuk dalam dimensi */
+  box-sizing: border-box;
 }
 
 .login-form {
-  background-color: #ffffff; /* Latar belakang putih untuk formulir */
+  background-color: #ffffff;
   padding: 40px;
-  border-radius: 12px; /* Sudut membulat */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih menonjol */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 450px; /* Batasi lebar formulir */
+  max-width: 450px;
   text-align: center;
   box-sizing: border-box;
 }
 
 .login-form h2 {
   font-size: 2.5em;
-  color: #282c34; /* Warna teks judul */
+  color: #282c34;
   margin-bottom: 30px;
   font-weight: 700;
 }
 
 .form-group {
-  margin-bottom: 20px; /* Jarak antar grup formulir */
-  text-align: left; /* Teks label sejajar kiri */
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .form-group label {
-  display: block; /* Label di baris sendiri */
+  display: block;
   margin-bottom: 8px;
   color: #555;
   font-size: 1em;
@@ -45,26 +42,26 @@
 }
 
 .form-group input {
-  width: 100%; /* Input memenuhi lebar */
+  width: 100%;
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1em;
-  box-sizing: border-box; /* Memastikan padding termasuk dalam lebar input */
+  box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group input:focus {
-  border-color: #61dafb; /* Border biru saat fokus */
-  box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3); /* Efek bayangan saat fokus */
-  outline: none; /* Hapus outline default browser */
+  border-color: #61dafb;
+  box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3);
+  outline: none;
 }
 
 .login-form button {
-  width: 100%; /* Tombol memenuhi lebar */
+  width: 100%;
   padding: 15px;
-  background-color: #61dafb; /* Warna tombol utama */
-  color: #282c34; /* Warna teks tombol */
+  background-color: #61dafb;
+  color: #282c34;
   border: none;
   border-radius: 8px;
   font-size: 1.1em;
@@ -76,8 +73,8 @@
 }
 
 .login-form button:hover {
-  background-color: #4fa3d1; /* Warna lebih gelap saat hover */
-  transform: translateY(-2px); /* Efek angkat */
+  background-color: #4fa3d1;
+  transform: translateY(-2px);
 }
 
 .login-form button:active {
@@ -86,7 +83,7 @@
 }
 
 .login-form button:disabled {
-  background-color: #cccccc; /* Warna saat dinonaktifkan */
+  background-color: #cccccc; 
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
@@ -99,26 +96,26 @@
 }
 
 .login-form p a {
-  color: #61dafb; /* Warna link biru */
+  color: #61dafb;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .login-form p a:hover {
-  color: #4fa3d1; /* Warna lebih gelap saat hover */
+  color: #4fa3d1;
   text-decoration: underline;
 }
 
 .demo-info {
-  background-color: #e9f7fe; /* Latar belakang untuk info demo */
-  border: 1px solid #cceeff; /* Border untuk info demo */
+  background-color: #e9f7fe;
+  border: 1px solid #cceeff;
   border-radius: 8px;
   padding: 15px;
   margin-top: 30px;
   text-align: left;
   font-size: 0.9em;
-  color: #3a8ee6; /* Warna teks untuk info demo */
+  color: #3a8ee6;
 }
 
 .demo-info p {
@@ -127,14 +124,13 @@
 }
 
 .demo-info strong {
-  color: #1a56a0; /* Warna lebih gelap untuk strong */
+  color: #1a56a0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .login-form {
     padding: 30px 20px;
-    margin: 0 15px; /* Tambahkan margin samping pada layar kecil */
+    margin: 0 15px;
   }
 
   .login-form h2 {

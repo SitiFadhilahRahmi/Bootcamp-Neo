@@ -61,7 +61,7 @@
   border: none;
   color: white;
   cursor: pointer;
-  display: block;
+  display: none;
   position: absolute;
   top: 15px;
   right: 20px;

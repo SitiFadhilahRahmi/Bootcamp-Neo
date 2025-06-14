@@ -2,18 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Mengisi sisa tinggi viewport setelah navbar (asumsi navbar tinggi 60px) */
   min-height: calc(100vh - 60px);
   padding: 30px 20px;
-  background-color: #f0f2f5; /* Latar belakang abu-abu muda yang lembut */
+  background-color: #f0f2f5;
   font-family: 'Inter', sans-serif;
-  color: #333; /* Warna teks utama */
-  box-sizing: border-box; /* Memastikan padding termasuk dalam dimensi */
+  color: #333;
+  box-sizing: border-box;
 }
 
 .dashboard-container h1 {
   font-size: 3em;
-  color: #282c34; /* Warna judul utama */
+  color: #282c34;
   margin-bottom: 20px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   font-weight: 700;
@@ -24,18 +23,18 @@
   margin-bottom: 15px;
   color: #555;
   text-align: center;
-  max-width: 700px; /* Batasi lebar paragraf untuk keterbacaan */
+  max-width: 700px;
   line-height: 1.6;
 }
 
 .dashboard-content {
-  background-color: #ffffff; /* Latar belakang putih untuk konten dasbor */
+  background-color: #ffffff;
   padding: 30px;
-  border-radius: 12px; /* Sudut membulat */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Bayangan yang lebih lembut */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   margin-top: 30px;
   width: 100%;
-  max-width: 900px; /* Batasi lebar konten */
+  max-width: 900px;
   box-sizing: border-box;
 }
 
@@ -44,48 +43,48 @@
   color: #282c34;
   margin-bottom: 25px;
   text-align: center;
-  border-bottom: 2px solid #eee; /* Garis bawah untuk bagian */
+  border-bottom: 2px solid #eee;
   padding-bottom: 15px;
 }
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kolom responsif */
-  gap: 25px; /* Jarak antar kartu stat */
-  justify-content: center; /* Pusatkan kartu jika ada ruang lebih */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-content: center;
 }
 
 .stat-card {
-  background-color: #e9f7fe; /* Latar belakang biru muda untuk kartu stat */
+  background-color: #e9f7fe;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Bayangan kartu yang lebih ringan */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   text-align: center;
-  border: 1px solid #cceeff; /* Border lembut */
+  border: 1px solid #cceeff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-card:hover {
-  transform: translateY(-5px); /* Efek angkat saat hover */
+  transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .stat-card h4 {
   font-size: 1.4em;
-  color: #3a8ee6; /* Warna judul stat */
+  color: #3a8ee6;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 .stat-card p {
   font-size: 2.2em;
-  color: #282c34; /* Warna angka stat */
+  color: #282c34;
   font-weight: bold;
   margin: 0;
-  line-height: 1; /* Pastikan angka tidak memiliki spasi berlebih */
+  line-height: 1;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .dashboard-container h1 {
     font-size: 2.5em;
@@ -107,7 +106,7 @@
   }
 
   .stats-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Kolom lebih kecil */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
   }
 
@@ -142,7 +141,7 @@
   }
 
   .stats-grid {
-    grid-template-columns: 1fr; /* Satu kolom di layar sangat kecil */
+    grid-template-columns: 1fr;
   }
 
   .stat-card {

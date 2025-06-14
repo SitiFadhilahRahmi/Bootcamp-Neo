@@ -1,21 +1,19 @@
-/* Home.css */
-
 .home-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 60px); /* Mengisi sisa tinggi viewport setelah navbar */
+  min-height: calc(100vh - 60px);
   text-align: center;
   padding: 20px;
-  background-color: #f4f7f6; /* Warna latar belakang lembut */
-  color: #333; /* Warna teks utama */
-  font-family: 'Inter', sans-serif; /* Menggunakan font Inter */
+  background-color: #f4f7f6;
+  color: #333;
+  font-family: 'Inter', sans-serif;
 }
 
 .home-container h1 {
   font-size: 2.8em;
-  color: #282c34; /* Warna yang sama dengan navbar */
+  color: #282c34;
   margin-bottom: 25px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -35,22 +33,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px; /* Jarak antar elemen di dalam div */
-  max-width: 500px; /* Batasi lebar untuk tampilan yang lebih baik */
-  width: 100%; /* Memastikan div mengambil lebar penuh dalam max-width */
-  box-sizing: border-box; /* Pastikan padding termasuk dalam lebar */
+  gap: 15px;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .home-container div p {
-  margin: 0; /* Hapus margin default dari paragraf di dalam div */
+  margin: 0;
   font-size: 1.1em;
   color: #555;
 }
 
 .home-container a {
   display: inline-block;
-  background-color: #61dafb; /* Warna biru cerah */
-  color: #282c34; /* Teks gelap untuk kontras */
+  background-color: #61dafb;
+  color: #282c34;
   padding: 12px 25px;
   border-radius: 25px;
   text-decoration: none;
@@ -60,8 +58,8 @@
 }
 
 .home-container a:hover {
-  background-color: #4fa3d1; /* Sedikit lebih gelap saat hover */
-  transform: translateY(-2px); /* Efek angkat ringan */
+  background-color: #4fa3d1;
+  transform: translateY(-2px);
 }
 
 .home-container a:active {
@@ -69,12 +67,10 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling untuk Link yang terpisah (Login | Register) */
-.home-container div a:nth-child(2) { /* Target Link "Register" */
-  margin-left: 10px; /* Memberi jarak antara Login dan Register */
+.home-container div a:nth-child(2) {
+  margin-left: 10px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .home-container h1 {
     font-size: 2em;
@@ -99,7 +95,7 @@
   }
 
   .home-container a {
-    width: 90%; /* Tombol lebih lebar di layar sangat kecil */
+    width: 90%;
     box-sizing: border-box;
     text-align: center;
   }
